@@ -1,3 +1,15 @@
+QR Code Generator
+
+The QR Code Generator is a simple web application built using React. It allows users to generate QR codes for URLs or text inputs. Users can customize the QR code's size and background color before generating it. The application also features a dynamic gradient background that changes each time the page is loaded.
+
+Features
+Generate QR codes for URLs or text inputs.
+Customize QR code size and background color.
+Dynamic gradient background that changes on each page load.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,3 +1,8 @@
+OTPValidation React App
+
+The OTPValidation React App is a simple web application that allows users to request OTP (One-Time Password) for validation. It includes a form that takes in the user's name, phone number, and email address. When the user submits the form, the app sends a request to an API to generate an OTP. The API response, which contains the OTP ID and secret, is displayed on the page. The user can then validate the OTP by clicking on the provided link.
+
+The application also features a honeycomb loading animation while the OTP generation is in progress or during page load.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

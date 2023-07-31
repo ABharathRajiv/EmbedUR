@@ -1,3 +1,16 @@
+URL Shortener
+
+The URL Shortener is a web application that allows users to convert long URLs into short, more manageable links. It simplifies sharing URLs by reducing their length, making them easier to share on social media, emails, or other platforms. The application provides a simple and user-friendly interface for creating and managing short URLs.
+
+Features
+
+Shorten long URLs into concise, easy-to-share links.
+Track the number of clicks and basic analytics for each short URL.
+Customizable short URLs for personalized branding (optional feature).
+User-friendly interface for creating and managing short URLs.
+QR code generation for each short URL.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

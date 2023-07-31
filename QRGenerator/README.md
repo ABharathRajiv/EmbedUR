@@ -1,4 +1,4 @@
-QR Code Generator
+QR Code Generator 8/30/2023
 
 The QR Code Generator is a simple web application built using React. It allows users to generate QR codes for URLs or text inputs. Users can customize the QR code's size and background color before generating it. The application also features a dynamic gradient background that changes each time the page is loaded.
 

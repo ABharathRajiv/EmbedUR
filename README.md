@@ -14,5 +14,9 @@ URL Shortener: Created a URL shortener service that takes long URLs and converts
 
 Demo Video : https://drive.google.com/drive/folders/1uDq7Z5FuV78YAyvYtXGb48vzJO86LBby?usp=sharing
  
+ Progress & Design :
+![IMG-2262](https://github.com/ABharathRajiv/EmbedUR/assets/140680666/7acfb42d-bac4-4497-a909-085fafe9cb2f)
+![IMG-2261](https://github.com/ABharathRajiv/EmbedUR/assets/140680666/012cc9d9-7d92-4425-8904-88bf0eb4ad1b)
+
  
 Links for all the task will updated after successfull deployment in gitpages...

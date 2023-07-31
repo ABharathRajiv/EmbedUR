@@ -11,6 +11,8 @@ OTP Validation: Implemented an OTP validation feature that allows users to recei
 QR Code Generator: Developed a QR code generator that can generate QR codes for various data types, such as URLs, text, or contact information.
 
 URL Shortener: Created a URL shortener service that takes long URLs and converts them into shorter, more manageable links.
+
+Demo Video : https://drive.google.com/drive/folders/1uDq7Z5FuV78YAyvYtXGb48vzJO86LBby?usp=sharing
  
  
 Links for all the task will updated after successfull deployment in gitpages...

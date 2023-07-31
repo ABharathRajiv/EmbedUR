@@ -1,10 +1,13 @@
 @import url('http://fonts.cdnfonts.com/css/lilly');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 .App{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 50px;
+min-height: 120vh;
 padding-top: 30px;
 }
 h1{
@@ -38,12 +41,113 @@ display: flex;
 justify-content: space-around;
 gap: 10px;
 }
+
+.button {
+  margin-left: 10px; /* Adjust the margin as per your preference */
+}
+
 .output-box{
 display: flex;
 flex-direction: column;
 align-items: center;
-gap: 40px;
+gap: 400px;
 }
+
+.output-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 15px; /* To adjust the value as per your preference for the roundness */
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.output-box img {
+  border-radius: 15px;
+  object-fit: contain;
+}
+
+
+
+
+.extra h5 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+/* Buttons css from codepen */
+
+button{
+  position: relative;
+  width: 130px;
+  /* height: 65px;
+  width: 100px;
+  margin: 0 40px;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 1px; */
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  background: #0d0d0d;
+  overflow: hidden;
+  transition: 0.6s;
+}
+/* button:first-child{
+  color: #206592;
+  border-color: #206592;
+} */
+
+button:before, button:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  filter: blur(30px);
+  opacity: 0.4;
+  transition: 0.6s;
+}
+button:before{
+  width: 60px;
+  background: rgba(255,255,255,0.6);
+  transform: translateX(-130px) skewX(-45deg);
+}
+button:after{
+  width: 30px;
+  background: rgba(255,255,255,0.6);
+  transform: translateX(-130px) skewX(-45deg);
+}
+button:hover:before,
+button:hover:after{
+  opacity: 0.6;
+  transform: translateX(320px) skewX(-45deg);
+}
+button:hover{
+  color: #f2f2f2;
+}
+
+
+.floating-text {
+  position: fixed; /* Use "absolute" if you want it to be positioned relative to its parent container */
+  bottom: 20px; /* Adjust the bottom value to control the distance from the bottom of the page */
+  right: 20px; /* Adjust the right value to control the distance from the right side of the page */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* button:hover:first-child{
+  background: #206592;
+} */
+
+
 /* html{
     background-color: #222222;
     background: rgb(255,216,155);

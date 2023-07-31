@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
+.App{
+display: flex;
+flex-direction: column;
+justify-content: left;
+align-items: left;
+gap: 50px;
+min-height: 120vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+h1{
+  padding-top: 20px;
+font-family: 'Quando', serif;
+font-size: 3.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+font-family: 'Poppins', sans-serif;
+font-size: 1.5rem;
+margin-left: 10px;
+margin-bottom: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+h1 {
+  margin-bottom: 1px;
+}
+
+p{
+font-family: 'Quando', serif; 
+font-size: 0.9rem;
+margin: 10px;
+}
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: left;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+input {
+  height: 25px;
+  width: 200px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  font-size: 4.2vw;
+  color: #fff;
+  background-color: rgb(28,28,30);
+  box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 1.4vw;
+  max-width: 200px;
+  transition: .4s;
+}
+
+input:hover {
+  box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+}
+
+input:focus {
+  box-shadow: 0 0 0 .15vw skyblue;
+}
+button {
+  height: 35px;
+  width: 150px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: whitesmoke;
+  background-color: rgb(233, 241, 112);
+  box-shadow: 2px 2px 5px rgb(222, 202, 88);
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+/* Custom button style */
+
+button {
+  position: relative;
+  width: 150px;
+  height: 35px; /* Set the desired height */
+  top: -2px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  background-color: rgb(233, 241, 112);
+  box-shadow: 2px 2px 5px rgb(222, 202, 88);
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+/* Buttons css from codepen */
+button {
+  text-transform: uppercase;
+  background: #0d0d0d;
+  overflow: hidden;
+  transition: 0.6s;
+}
+
+button:before,
+button:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  filter: blur(30px);
+  opacity: 0.4;
+  transition: 0.6s;
+}
+
+button:before {
+  width: 60px;
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateX(-130px) skewX(-45deg);
+}
+
+button:after {
+  width: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateX(-130px) skewX(-45deg);
+}
+
+button:hover:before,
+button:hover:after {
+  opacity: 0.6;
+  transform: translateX(320px) skewX(-45deg);
+}
+
+button:hover {
+  color: #f2f2f2;
+  box-shadow: 2px 2px 5px rgb(222, 202, 88); /* Re-add the box shadow on hover */
+}
+
+
+.floating-text {
+  position: fixed; /* Use "absolute" if you want it to be positioned relative to its parent container */
+  bottom: 20px; /* Adjust the bottom value to control the distance from the bottom of the page */
+  right: 20px; /* Adjust the right value to control the distance from the right side of the page */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
 }

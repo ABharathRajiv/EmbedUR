@@ -1,12 +1,23 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-
+function getRandomColor() {
+	var r = Math.floor(Math.random() * 256);
+	var g = Math.floor(Math.random() * 256);
+	var b = Math.floor(Math.random() * 256);
+	return "rgb(" + r + ", " + g + ", " + b + ")";
+  }
+  
 function App() {
 const [temp, setTemp] = useState("");
 const [word, setWord] = useState("");
 const [size, setSize] = useState(400);
 const [bgColor, setBgColor] = useState("ffffff");
 const [qrCode, setQrCode] = useState("");
+const startColor = getRandomColor();
+const endColor = getRandomColor();
+const gradientStyle = {
+background: `linear-gradient(260deg, ${startColor} 0%, ${endColor} 82%)`,
+};
 
 // Changing the URL only when the user
 // changes the input
@@ -22,6 +33,7 @@ function handleClick() {
 }
 
 return (
+	<div className="App" style={gradientStyle}>
 	<div className="App">
 	<h1>QR Code Generator</h1>
 	<div className="input-box">
@@ -49,6 +61,7 @@ return (
 		<a href={qrCode} download="QRCode">
 		<button type="button">Download</button>
 		</a>
+	</div>
 	</div>
 	</div>
 );

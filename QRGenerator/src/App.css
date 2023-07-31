@@ -44,3 +44,13 @@ flex-direction: column;
 align-items: center;
 gap: 40px;
 }
+/* html{
+    background-color: #222222;
+    background: rgb(255,216,155);
+    background: -moz-linear-gradient(260deg, rgba(255,216,155,1) 0%, rgba(25,84,123,1) 82%);
+    background: -webkit-linear-gradient(260deg, rgba(255,216,155,1) 0%, rgba(25,84,123,1) 82%);
+    background: linear-gradient(260deg, rgba(255,216,155,1) 0%, rgba(25,84,123,1) 82%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd89b",endColorstr="#19547b",GradientType=1);
+  } */
+  
+  

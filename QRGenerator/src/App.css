@@ -1,4 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/lilly');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 .App{
@@ -11,7 +10,7 @@ min-height: 120vh;
 padding-top: 30px;
 }
 h1{
-font-family: 'Lilly', sans-serif;
+font-family: 'Poppins', sans-serif;
 font-size: 50px;
 }
 .gen input{

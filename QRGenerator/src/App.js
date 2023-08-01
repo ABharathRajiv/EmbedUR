@@ -29,13 +29,15 @@ function App() {
   // Changing the URL only when the user
   // changes the input
   useEffect(() => {
-	console.log("word: " + word);
     setQrCode(`http://api.qrserver.com/v1/create-qr-code/?data=${word}&size=${size}x${size}&bgcolor=${bgColor}`);
   }, [word, size, bgColor]);
+  
 
   // Updating the input word when user
   // click on the generate button
   function handleClick() {
+    console.log('word', word);
+    console.log('qrCode', qrCode);
     setWord(temp);
   }
 
